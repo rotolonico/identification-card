@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+     <!--declare var-->
+    
+<script>
+    var person = "name";
+    var age = "age";
+    var andress = "andress";
+    var color = "color";
+</script>
+    <!---->
+    
+    <!--TAKE NAME-->
+    
+<p>What's your name?</p>
+
+
+<button onclick="getname()">Try it</button>
+
+    
+
+<script>
+    function getname() {
+        person = prompt("Please enter your name", "name");
+    }
+    
+</script>
+    <!---->
+    
+    <!--TAKE AGE-->
+    
+<p>How old are you?</p>
+
+<button onclick="getage()">Try it</button>
+
+<script>
+    function getage() {
+        age = prompt("Please enter your age", "age");
+    }
+    
+</script>
+    <!---->
+    
+    <!--TAKE ANDRESS-->
+    
+<p>What's your andress?</p>
+
+<button onclick="getandress()">Try it</button>
+
+<script>
+    function getandress() {
+        andress = prompt("Please enter your andress", "andress");
+    }
+    
+</script>
+    <!---->
+    
+    <!--TAKE COLOR-->
+<p>What's your preferite color?</p>
+
+<button onclick="getcolor()">Try it</button>
+
+
+<script>
+    function getcolor() {
+        color = prompt("Please enter your preferite color", "color");
+    }
+    
+</script>
+    <!---->
+    
+    <!--GENERATE FINAL TEXT-->
+    
+<br>
+<br>
+<br>
+<button onclick="generate()">generate your identification card</button>
+<p id="show"></p>
+<script>
+    function generate() {
+ 
+        document.getElementById("show").innerHTML =
+            "Your name is " + person + " You're " + age + " years old, you              live in " + andress + " and your preferite color is " + color;
+        }
+</script>
+    <!---->
+    
+
+</body>
+</html>
